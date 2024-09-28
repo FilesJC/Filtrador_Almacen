@@ -1,0 +1,67 @@
+1. Crear un entorno virtual (opcional, pero recomendado):
+
+----------------------------------------------------------------------------------
+Para mantener tu proyecto aislado, puedes crear un entorno virtual usando venv:
+
+python3 -m venv env
+source env/bin/activate  # Para activarlo en Linux o macOS
+
+*********************************************************************************
+
+Si estás en Windows, el comando para activar el entorno sería:
+---------------------------------------------------------------------------------
+env\Scripts\activate
+
+***********************************************************************************
+
+
+2. Instalar Streamlit y otras bibliotecas:
+Instala las bibliotecas que necesitas para tu proyecto usando pip:
+
+-----------------------------------------------------------------------------------
+
+pip install streamlit
+pip install numpy pandas matplotlib  # Instala también cualquier otra biblioteca que necesites
+
+**************************************************************************************
+
+3. Generar automáticamente el archivo requirements.txt:
+---------------------------------------------------------------------------------------------
+
+Una vez que hayas instalado todas las bibliotecas necesarias, 
+puedes generar un archivo requirements.txt con las versiones 
+actuales de todas las bibliotecas instaladas en tu entorno virtual:
+
+pip freeze > requirements.txt
+
+Este comando tomará un "snapshot" de las versiones actuales
+ de las bibliotecas instaladas y lo escribirá en requirements.txt.
+
+**************************************************************************************************
+
+Pasos para crear un ejecutable .exe de un programa Streamlit:
+
+--------------------------------------------------------------------------------------------------
+
+1. Instala PyInstaller:
+Primero, instala PyInstaller en tu entorno de desarrollo:
+
+pip install pyinstaller
+
+2. Crea el archivo ejecutable:
+Con PyInstaller instalado, puedes convertir tu script 
+Python (por ejemplo, app.py) en un archivo ejecutable usando el siguiente comando:
+
+pyinstaller --onefile --noconsole app.py
+
+***********************************************************************************************
+
+
+
+
+
+
+
+
+
+
