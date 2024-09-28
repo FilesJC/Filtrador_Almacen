@@ -101,7 +101,7 @@ elif seleccion == "FILTRADO FILES":
                     file_name = file_name.replace(" ", "_").replace(":", "-").replace("/", "-")
 
                    
-                    save_dir = ruta
+                    save_dir = Path(ruta)
 
                     # Guardar el DataFrame en un archivo Excel físico
                     file_path =  save_dir / f"{file_name}.xlsx"
